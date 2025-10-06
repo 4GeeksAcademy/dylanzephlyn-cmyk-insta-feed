@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -32,15 +31,37 @@
                         </div>
                         <div class="modal-body">
                             <form>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-file-earmark-richtext"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">
+                                            <i class="bi bi-camera"></i>
+                                            Take picture
+                                        </a></li>
+                                        <li><a class="dropdown-item" href="#">
+                                            <i class="bi bi-file-earmark-image"></i>
+                                            Existing file
+                                        </a></li>
+                                    </ul>
+                                </div>
                                 <div class="mb-3">
                                     <label for="message-text" class="col-form-label">Caption:</label>
                                     <textarea class="form-control" id="message-text"></textarea>
                                 </div>
+                                <button type="button" class="btn btn-secondary">
+                                    <i class="bi bi-camera-fill"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </button>
                             </form>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Send message</button>
+                            <button type="button" class="btn btn-primary">Post</button>
                         </div>
                     </div>
                 </div>
@@ -51,40 +72,124 @@
                     <i class="bi bi-gear"></i>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-lg-end">
-                    <li><a class="dropdown-item" href="#">Menu item</a></li>
-                    <li><a class="dropdown-item" href="#">Menu item</a></li>
-                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accesability</data></a></li>
+                    <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                    <hr>
+                    <li><a class="dropdown-item text-danger" href="#">
+                        Log out
+                        <i class="bi bi-door-open"></i>
+                    </a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Nav tabs -->
-    <ul class="nav justify-content-center" role="tablist">
+    <ul class="nav justify-content-center pt-3" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" data-bs-toggle="tab" href="#tab1" role="tab">Active</a>
+            <a class="nav-link active" data-bs-toggle="tab" href="#tab1" role="tab">
+                <i class="bi bi-file-image"></i>
+            </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#tab2" role="tab">Link</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#tab2" role="tab">
+                <i class="bi bi-border-all"></i>
+            </a>
         </li>
     </ul>
 
     <!-- tab 1 -->
     <div class="tab-content mt-3">
         <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-            <!-- content -->
+            <!-- CONTENT -->
+            <!-- post 1 -->
             <div class="row justify-content-center">
-                <div class="col-6">
+                <div class="col-5">
                     <div class="card h-200">
                         <div class="card-title d-flex">
-                            <img class="pfp" src="https://shapes.inc/api/public/avatar/naruto-lc6e" alt="">
-                            <p class="pt-3 px-1">MfGuerrero</p>
+                            <img src="https://shapes.inc/api/public/avatar/naruto-lc6e" alt="profile picture"
+                                class="img-fluid rounded-circle p-1" style="max-width: 60px;">
+                            <p style="font-size: 17px;" class="pt-3 px-2">
+                                MfGuerrero
+                            </p>
                         </div>
-                        <img src="https://i.pinimg.com/1200x/87/57/2b/87572b7ac9c50e36d78b90d14665ffea.jpg"
-                            class="img" alt="...">
+                        <img src="https://i.pinimg.com/1200x/87/57/2b/87572b7ac9c50e36d78b90d14665ffea.jpg" class="img"
+                            alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">MfGuerrero</h5>
+                            <p class="card-text">To be alive is to be caos.
+                                <br>
+                                #widowmaker
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- post 2 -->
+            <div class="row justify-content-center mt-3">
+                <div class="col-5">
+                    <div class="card h-200">
+                        <div class="card-title d-flex">
+                            <img src="https://shapes.inc/api/public/avatar/naruto-lc6e" alt="profile picture"
+                                class="img-fluid rounded-circle p-1" style="max-width: 60px;">
+                            <p style="font-size: 17px;" class="pt-3 px-2">
+                                MfGuerrero
+                            </p>
+                        </div>
+                        <img src="https://i.pinimg.com/736x/69/64/03/6964033c77136b92bfc98dae724da27f.jpg" class="img"
+                            style="max-height: 600px;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">MfGuerrero</h5>
+                            <p class="card-text">Game at 5 pub at 7.
+                                <br>
+                                #blokecore
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- post 3 -->
+            <div class="row justify-content-center mt-3">
+                <div class="col-5">
+                    <div class="card h-200">
+                        <div class="card-title d-flex">
+                            <img src="https://shapes.inc/api/public/avatar/naruto-lc6e" alt="profile picture"
+                                class="img-fluid rounded-circle p-1" style="max-width: 60px;">
+                            <p style="font-size: 17px;" class="pt-3 px-2">
+                                MfGuerrero
+                            </p>
+                        </div>
+                        <img src="https://i.pinimg.com/1200x/a5/73/22/a573223599440a61f72d542c54983b8b.jpg" class="img"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">MfGuerrero</h5>
+                            <p class="card-text">What's more genereous than a window?
+                                <br>
+                                #reflect
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- post 4 -->
+            <div class="row justify-content-center mt-3">
+                <div class="col-5">
+                    <div class="card h-200">
+                        <div class="card-title d-flex">
+                            <img src="https://shapes.inc/api/public/avatar/naruto-lc6e" alt="profile picture"
+                                class="img-fluid rounded-circle p-1" style="max-width: 60px;">
+                            <p style="font-size: 17px;" class="pt-3 px-2">
+                                MfGuerrero
+                            </p>
+                        </div>
+                        <img src="https://i.pinimg.com/736x/48/2d/75/482d75f5c4f02bda1c3f8d3a718a8cfb.jpg" class="img"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">MfGuerrero</h5>
+                            <p class="card-text">Stay consistent not motivated.
+                                <br>
+                                #discipline
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -93,29 +198,70 @@
     </div>
     <!-- tab 2 -->
     <div class="tab-pane fade" id="tab2" role="tabpanel">
-        <!-- content -->
+        <!-- CONTENT -->
+        <!-- row 1 -->
         <div class="row mx-1">
             <div class="col-4">
-                <img src="https://i.pinimg.com/1200x/87/57/2b/87572b7ac9c50e36d78b90d14665ffea.jpg"
-                    class="img-fluid rounded" alt="">
+                <div class="ratio ratio-1x1">
+                    <img src="https://i.pinimg.com/1200x/87/57/2b/87572b7ac9c50e36d78b90d14665ffea.jpg"
+                        class="img-fluid rounded" alt="">
+                </div>
             </div>
             <div class="col-4">
-                <img src="https://i.pinimg.com/1200x/87/57/2b/87572b7ac9c50e36d78b90d14665ffea.jpg"
-                    class="img-fluid rounded" alt="">
+                <div class="ratio ratio-1x1">
+                    <img src="https://i.pinimg.com/736x/6e/b2/58/6eb25853524246d5a9b5a1334ca07387.jpg"
+                        class="img-fluid rounded" alt="">
+                </div>
             </div>
             <div class="col-4">
-                <img src="https://i.pinimg.com/1200x/87/57/2b/87572b7ac9c50e36d78b90d14665ffea.jpg"
+                <img src="https://i.pinimg.com/736x/66/03/02/660302efd9e62944a627fd3d3bed8bbe.jpg"
                     class="img-fluid rounded" alt="">
+            </div>
+        </div>
+        <!-- row 2 -->
+        <div class="row mx-1 pt-4">
+            <div class="col-4">
+                <div class="ratio ratio-1x1">
+                    <img src="https://i.pinimg.com/736x/7a/8f/aa/7a8faa0f94bbdb24f4294efb0832a8c8.jpg"
+                        class="img-fluid rounded" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="ratio ratio-1x1">
+                    <img src="https://i.pinimg.com/736x/ee/04/d3/ee04d350b409e1f4caf9389275898ef6.jpg"
+                        class="img-fluid rounded" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="ratio ratio-1x1">
+                    <img src="https://i.pinimg.com/736x/48/d6/7f/48d67f0c6451bcf520b3c5eb1fee7f58.jpg"
+                        class="img-fluid rounded" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- row 3 -->
+        <div class="row mx-1 mb-3 pt-4">
+            <div class="col-4">
+                <div class="ratio ratio-1x1">
+                    <img src="https://i.pinimg.com/736x/e0/a0/c8/e0a0c861b089fcfb9be07a4741a8142e.jpg"
+                        class="img-fluid rounded" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="ratio ratio-1x1">
+                    <img src="https://i.pinimg.com/1200x/bc/4f/62/bc4f62711f4a85a8b34aaa0d104957c3.jpg"
+                        class="img-fluid rounded" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="ratio ratio-1x1">
+                    <img src="https://i.pinimg.com/1200x/11/33/75/113375c1f82f78c54a4057d2a595700f.jpg"
+                        class="img-fluid rounded" alt="">
+                </div>
             </div>
         </div>
     </div>
     </div>
-
-
-
-
-
-
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
